@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+    letter-spacing: 1px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 250px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgb(81,54,108,.5);
+  }
+
+.carousel-caption {
+    bottom: 220px;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: 'Playfair Display';
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: 'Poppins';   
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+
+/* .navbar-brand, .nav > li > a {
+    padding: 30px 15px;
+} */
+
+.navbar-nav a {
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: #474168;
+    color: rgb(247,194,171);
+    padding: 50px 0 10px 0;
+}
+
+
+.fc1 > a {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(247,194,171);
+}
+
+.fc2 form input[type=submit] {
+    background: rgb(38,38,38);
+    border: none;
+    padding: 3px 10px;
+    font-family: 'Playfair Display';
+    margin-left: -5px;
+    color: white;
+}
+
+.fc2 form input[type=email] {
+    width: 220px;
+}
+
+h3, h2 {
+    font-family: 'Playfair Display';
+}
+
+p {
+    font-family: 'Playfair Display';
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.fc3 ul, .fc4 ul {
+    list-style: none;
+}
+
+.fc3 ul a, .fc4 ul a {
+    color: rgb(247,194,171);
+    font-family: 'Playfair Display';
+}
+
+.fc3 .fc4 ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.img-thumbnail {
+    height: 300px;
+    overflow: hidden;
+}
+
+.aboutus li ul:before, .fc3 ul li:before, .fc4 ul li:before {
+    content: '✓ ';
+  }
+
+.nav-bar2 {
+    background-color: rgb(71,65,104);
+}
+
+.btn {
+    background-color: #474168;
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.autitle {
+    padding-top: 100px;
+    color: #fff;
+}
+.aboutus {
+    margin: 40px 0 40px 0;
+    line-height: 50px;
+    font-size: large;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+.au {
+    background-color: #B0AAEA;
+}
+
+.img-thumbnail:hover {
+    opacity: .7;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 50px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+        top: 100px;
+    }
+
+    /* .carousel-item {
+    height: 100vh;
+    min-height: 500px;
+    background: cover;
+    background-size: cover;
+    } */
+
+    .carousel-item {
+        width: 100%;
+        height: 500px; /* example */
+    }
+      
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+
+    .carousel-caption > p {
+        font-size: 13px;
+    }
+
+    .fc1, .fc2, .fc3, .fc4 {
+        padding-bottom: 30px;
+    }
+
+    .list-unstyled {
+        padding: 0 0 30px 0;
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+
+    .contactus {
+        padding: 10px 20px 0 20px;
+    }
+}
